@@ -55,6 +55,15 @@ export function Contact() {
                 button {
                     width: fit-content;
                 }
+
+                a {
+                    padding: 5px 10px;
+                    background-color: lightgrey;
+                    width: fit-content;
+                    color: black;
+                    text-decoration: none;
+                    margin-top: 10px;
+                }
             `}</style>
         </>
     );

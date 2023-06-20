@@ -25,7 +25,7 @@ function App() {
   const Page = pages[selectedRoute];
 
   return (
-    <div>
+    <div id="page-wrapper">
       <Header 
         selectedRoute={selectedRoute} 
         onRouteClick={handleRouteClick}
@@ -40,6 +40,11 @@ function App() {
           padding: 10px;
           padding-bottom: 50px;
         }  
+
+        #page-wrapper {
+          position: relative;
+          min-height: 100vh;
+        }
       `}</style>
     </div>
   );
