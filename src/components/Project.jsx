@@ -34,7 +34,7 @@ export function Project({ name, imgUrl, deployedUrl, githubUrl }) {
                 h3 {
                     display: flex;
                     justify-content: center;
-                    align-item: center;   
+                    align-item: center;
                 }
             `}</style>
         </div>
