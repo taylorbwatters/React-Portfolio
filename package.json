@@ -8,10 +8,10 @@
     "react-scripts": "5.0.1",
     "styled-jsx": "^5.1.2"
   },
-  "homepage": "https://taylorbwatters.github.io/react-portfolio",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

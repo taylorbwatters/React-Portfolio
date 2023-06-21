@@ -8,9 +8,9 @@ export function AboutMe() {
                 Recently, I successfully completed the fullstack developer bootcamp at the University of Washington, marking a significant milestone in my career transition. When I'm not busy studying code, you can find me in the great outdoors, hiking through breathtaking trails, fishing, or engaging in friendly competition with my husband by outwitting him in board games.
                 Additionally, my furry companions, my two dogs Sam and Leia, bring endless joy and companionship to my life.</p>
             <section>
-                <img src="/images/leia.png" alt="dog"></img>
-                <img src="/images/sean-tay.png" alt="couple"></img>
-                <img src="/images/sam.png" alt="dog2"></img>
+                <img src="./images/leia.png" alt="dog"></img>
+                <img src="./images/sean-tay.png" alt="couple"></img>
+                <img src="./images/sam.png" alt="dog2"></img>
             </section>
 
         <style jsx>{`

@@ -39,7 +39,7 @@ export function Resume() {
             <section>
                 {resumeText.split('\n').map(str => <p>{str}</p>)}
             </section>
-            <a target="_blank" href="/files/Resume-Taylor-Watters-2023.pdf">Download</a>
+            <a target="_blank" href="./files/Resume-Taylor-Watters-2023.pdf">Download</a>
 
             <style jsx>{`
               h2 {
