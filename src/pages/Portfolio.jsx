@@ -2,10 +2,9 @@ import React from 'react';
 import { Project } from '../components/Project';
 
 const projects = [
-    { name: '#Adulting', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-    { name: 'Project 2', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-    { name: 'Project 3', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
-    { name: 'Project 4', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
+    { name: '#Adulting', githubUrl: 'https://github.com/aerostokes/hashtag-adulting', deployedUrl: 'https://hashtag-adulting.herokuapp.com/', imgUrl: '/images/hashtag-adulting.png' },
+    { name: 'Work Day Scheduler', githubUrl: 'https://github.com/taylorbwatters/work-day-scheduler', deployedUrl: 'https://taylorbwatters.github.io/work-day-scheduler/', imgUrl: '/images/work-day-scheduler.png' },
+    { name: 'Note Taker', githubUrl: 'https://github.com/taylorbwatters/note-taker', deployedUrl: 'https://tay-note-taker.herokuapp.com/', imgUrl: '/images/note-taker.png' },
 ]
 
 export function Portfolio() {
@@ -13,8 +12,8 @@ export function Portfolio() {
         <>
             <h2>Portfolio</h2>
             <section>
-                {projects.map(({ name, imgUrl }) => {
-                    return <Project key={name} name={name} imgUrl={imgUrl} />
+                {projects.map(({ name, imgUrl, deployedUrl }) => {
+                    return <Project key={name} name={name} imgUrl={imgUrl} deployedUrl={deployedUrl} />
                 })}
             </section>
 
@@ -22,6 +21,7 @@ export function Portfolio() {
                 section {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: space-around;
                 }
 
                 h2 {
