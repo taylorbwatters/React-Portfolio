@@ -44,7 +44,12 @@ function App() {
         #page-wrapper {
           position: relative;
           min-height: 100vh;
+          background-image: url(/images/background.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: white;
         }
+        
       `}</style>
     </div>
   );

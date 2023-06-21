@@ -24,7 +24,7 @@ export function Navigation({ selectedRoute, onRouteClick }) {
 
             <style jsx>{`
                 .selected {
-                    color: red;
+                    color: orange;
                 }
                 a { 
                     color: inherit; 

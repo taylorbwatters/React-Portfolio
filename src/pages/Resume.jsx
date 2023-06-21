@@ -1,17 +1,20 @@
 import React from 'react';
 
 const resumeText = `
-EXPERIENCE
-- Work 1
-  - did stuff
-  - additional things
-- Work 2
-  - did more stuff
-  - did other stuff
+Front-End Proficiencies
+- HTML
+- CSS
+- JavaScript
+- React
+- Bootstrap
+- JQuery
 
-EDUCATION
-- ASU Bachelors
-- UW Bootcamp
+Back-End Proficiencies
+- Node
+- Express
+- APIs
+- MySQL/Sequelize
+- MongoDB/Mongoose
 `;
 
 function downloadString(text, fileType, fileName) {
@@ -33,10 +36,35 @@ export function Resume() {
     return (
         <>
             <h2>Resume</h2>
-            <button onClick={() => downloadString(resumeText, 'txt', 'resume')}>Download</button>
             <section>
                 {resumeText.split('\n').map(str => <p>{str}</p>)}
             </section>
+            <a target="_blank" href="/files/Resume-Taylor-Watters-2023.pdf">Download</a>
+
+            <style jsx>{`
+              h2 {
+                  display: flex;
+                  justify-content: center;
+                  align-item: center;
+              }
+
+              section {
+                  display: flex;
+                  justify-content: center;
+                  align-item: center;
+                  flex-direction: column;
+                  font-weight: bold;
+              }
+
+              a {
+                    padding: 5px 10px;
+                    background-color: lightgrey;
+                    width: fit-content;
+                    color: black;
+                    text-decoration: none;
+                    margin-top: 10px;
+                }
+            `}</style>
         </>
     );
 }

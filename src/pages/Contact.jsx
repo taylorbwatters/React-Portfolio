@@ -32,8 +32,6 @@ export function Contact() {
                 <label>
                     Message: 
                     <textarea 
-                        rows={10} 
-                        cols={40} 
                         name="message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
@@ -46,10 +44,17 @@ export function Contact() {
                 form {
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
+                    align-items: center;
                 }    
 
                 input, textarea {
                     display: block;
+                    width: 50vw;
+                }
+
+                textarea {
+                    height: 30vh;
                 }
 
                 button {
@@ -63,6 +68,12 @@ export function Contact() {
                     color: black;
                     text-decoration: none;
                     margin-top: 10px;
+                }
+
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                    align-item: center;
                 }
             `}</style>
         </>

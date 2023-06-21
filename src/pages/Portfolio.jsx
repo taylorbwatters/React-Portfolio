@@ -2,7 +2,7 @@ import React from 'react';
 import { Project } from '../components/Project';
 
 const projects = [
-    { name: 'Project 1', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
+    { name: '#Adulting', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
     { name: 'Project 2', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
     { name: 'Project 3', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
     { name: 'Project 4', githubUrl: '', deployedUrl: '', imgUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' },
@@ -22,6 +22,12 @@ export function Portfolio() {
                 section {
                     display: flex;
                     flex-wrap: wrap;
+                }
+
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                    align-item: center;
                 }
             `}</style>
         </>
