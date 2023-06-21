@@ -6,8 +6,8 @@ export function Project({ name, imgUrl, deployedUrl, githubUrl }) {
             <h3>{name}</h3>
             <img src={imgUrl} alt="Project Image" />
             <div className="links">
-             <a target="_blank" href={deployedUrl}>Deployed App</a>
-             <a target="_blank" href={githubUrl}>GitHub</a>
+                <a target="_blank" href={deployedUrl}>Deployed App</a>
+                <a target="_blank" href={githubUrl}>GitHub</a>
              </div>
 
             <style jsx>{`

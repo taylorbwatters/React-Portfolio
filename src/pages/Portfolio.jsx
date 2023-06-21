@@ -12,8 +12,14 @@ export function Portfolio() {
         <>
             <h2>Portfolio</h2>
             <section>
-                {projects.map(({ name, imgUrl, deployedUrl }) => {
-                    return <Project key={name} name={name} imgUrl={imgUrl} deployedUrl={deployedUrl} />
+                {projects.map(({ name, imgUrl, deployedUrl, githubUrl }) => {                    
+                    return <Project 
+                        key={name} 
+                        name={name} 
+                        imgUrl={imgUrl} 
+                        deployedUrl={deployedUrl} 
+                        githubUrl={githubUrl}
+                    />
                 })}
             </section>
 
